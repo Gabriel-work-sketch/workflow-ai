@@ -25,7 +25,7 @@ export const Route = createFileRoute("/_app/meeting-notes")({
       { name: "twitter:card", content: "summary_large_image" },
     ],
   }),
-  component: MeetingNotes;
+  component: MeetingNotes,
 });
 
 function MeetingNotes() {
