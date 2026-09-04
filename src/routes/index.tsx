@@ -44,10 +44,10 @@ function LoginPage() {
     }
     setError("");
     setLoading(true);
-    const name = email
-      .split("@")[0]
+    const name = (email.split("@")[0] ?? "there")
       .replace(/[._-]+/g, " ")
       .replace(/\b\w/g, (c) => c.toUpperCase());
+
     signIn({ name, email });
     setTimeout(() => navigate({ to: "/dashboard" }), 350);
   };
